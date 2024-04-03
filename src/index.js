@@ -8,7 +8,9 @@ import { RatingProvider } from './contexts/rating.context';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RatingProvider>
+      <App />
+    </RatingProvider>
   </React.StrictMode>
 );
 
