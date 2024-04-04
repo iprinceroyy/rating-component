@@ -55,4 +55,10 @@ img {
   border: none;
   border-radius: 20px;
   background-color: hsl(25, 97%, 53%);
+
+  &:hover,
+  &:active {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+  }
 }

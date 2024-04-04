@@ -7,14 +7,15 @@ const NumberBox = ({ val }) => {
 
   const { setRatingCount } = useContext(RatingContext);
 
-  const handleNumberBtn = () => {
+  const handleNumberBtn = e => {
     setIsClicked(!isClicked);
     setRatingCount(ratingCount => ratingCount + 1);
   };
+
   return (
     <>
       <button className={isClicked ? 'active' : 'btn-number'} onClick={handleNumberBtn}>
-        {val}
+        {val + 1}
       </button>
     </>
   );

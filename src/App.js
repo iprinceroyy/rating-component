@@ -6,8 +6,6 @@ import Icon from './assets/images/icon-star.svg';
 
 import './App.scss';
 
-const numbers = [1, 2, 3, 4, 5];
-
 function App() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -32,8 +30,8 @@ function App() {
           </p>
 
           <div className='number-box-container'>
-            {numbers.map(num => (
-              <NumberBox key={num} val={num} />
+            {[...Array(5)].map((_, i) => (
+              <NumberBox key={i} val={i} />
             ))}
           </div>
 
